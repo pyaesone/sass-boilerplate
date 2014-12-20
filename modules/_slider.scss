@@ -1,0 +1,14 @@
+ // ====================================================================
+ // Heading          : Slider
+ // Descriptions:  Slider items and Slider styles
+ // ====================================================================
+
+ .slider {
+    @include e(item) {
+        @include m(active) {
+
+        }
+    }    
+ }
+
+ 

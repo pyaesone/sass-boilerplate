@@ -1,0 +1,142 @@
+// ====================================================================
+ // Heading          : Mixins
+ // Descriptions:  Sass Mixins are very useful for every front end developer . It reduce your 
+ //  head ache. They will give you nice supportation when you are creating your own themes.
+ //  They can be included from your base , layouts and other files . They should be imported 
+ // before your predefined style sheet which will use your sass mixins.
+ // ====================================================================
+
+ // BEM selectors
+
+@mixin e($element) {
+    &__#{$element} {
+    @content;
+  }
+}
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+// media query
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: 320px) { @content; }
+    }
+    @else if $media == xs {
+        @media only screen and (max-width: 768px) { @content; }
+    }
+    @else if $media == medium-screens {
+        @media only screen and (min-width: 321px) and (max-width: 1024px) { @content; }
+    }
+    @else if $media == wide-screens {
+        @media only screen and (min-width: 1024px) { @content; }
+    }
+    @else if $media == handhelds-ls-pt {
+        @media only screen and (min-width: 200px) and (max-width: 480px) { @content; }
+    }
+    @else if $media == tablet-bp-fst {
+        @media only screen and (min-width: 481px) and (max-width: 650px) { @content; }
+    }
+    @else if $media == tablet-bp-snd {
+     @media only screen and (min-width: 651px) and (max-width: 1024px) { @content; }
+    }
+}
+
+@mixin respond-to-max-width($width) {
+  @media only screen and(max-width: $width) {
+        @content;
+    }
+}
+
+@mixin respond-to-min-width($width) {
+  @media only screen and(min-width: $width) {
+        @content;
+    }
+}
+
+@mixin respond-to-min-max($minwidth,$maxwidth) {
+  @media only screen and(min-width: $minwidth) and (max-width: $maxwidth){
+        @content;
+    } 
+}
+
+
+@mixin rem-size ( $size ) {
+    font-size: $size;
+    font-size: calculateRem($size); // Will be Overriden if browser supports rems
+}
+// usage p { @include rem-size(14px) ; }
+
+
+// bullet proof svg background images
+$image-path: '../img' !default;
+$fallback-extension: 'png' !default;
+$retina-suffix: '@2x';
+
+@mixin retina-bgimage($name, $size:false){
+    background-image: url(#{$image-path}/#{$name}.svg);
+    @if($size){
+        background-size: $size;
+    }
+    .no-svg &{
+        background-image: url(#{$image-path}/#{$name}.#{$fallback-extension});
+
+        @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+          background-image: url(#{$image-path}/#{$name}#{$retina-suffix}.#{$fallback-extension});
+        }
+    }
+}
+
+
+// Keyframes
+@mixin keyframe-animation ($animation-name) {
+    @-webkit-keyframes $anmaimation-name {
+        @content;
+    }
+    @-moz-keyframes $animation-name {
+        @content;
+    }
+    @-ms-keyframes $animation-name {
+        @content;
+    }
+    @-o-keyframes $animation-name {
+        @content;
+    }
+    @keyframes $animtion-name {
+        @content;
+    }
+}
+
+// Animations
+@mixin animation ( $str ) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -o-animation: #{$str};
+    -ms-animation: #{$str};
+    animation: #{$str};
+}
+
+
+@mixin circle($size) {
+  width: $size+px;
+  height: $size+px;
+  border-radius: ($size/2)+px;
+  -moz-border-radius: ($size/2)+px;
+  -webkit-border-radius: ($size/2)+px;
+}
+
+@mixin pseudo-element ($el,$el-w: null, $el-h: null){
+  @if $el == "before" or $el == "after" {
+        &:#{$el} {
+          @extend %pseudos;
+          width: $el-w;
+          height: $el-h;
+          @content;
+      }
+    }
+    @else {
+        @error "'#{$el}' is not a valid pseudo-element";
+    }
+}

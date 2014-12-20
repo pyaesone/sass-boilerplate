@@ -1,0 +1,11 @@
+// ====================================================================
+ // Heading          : Sass Functions
+ // Descriptions:  Reusable sass functions are implemented here . We seperate sass functions
+ // and mixins in each own specific file . Functions must be imported before the Mixins file.
+ // ====================================================================
+
+ // fallback support for rems
+@function calculateRem( $size ) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}

@@ -1,0 +1,26 @@
+// ====================================================================
+ // Heading          : Config File
+ // Descriptions:  Variables and other sorts of config setting are implemented here. In sass ,
+ //  you should organize all of the variables in a single file . They are pretty intuitive and easily
+ //  maintainable. Variable can be declared according to your theme or as you wanted.
+ // ====================================================================
+
+// =================  Variable ======================= //
+
+// Typography
+$base-font                      : Arial;
+$base-font-size             :  @include em(14px);
+$base-font-color            : #ccc;
+$base-line-height           : @include em(16px);
+
+//  width and height
+
+// background
+$bg-url: url('some.jpg');
+
+// color
+ $border-color               : #ccc;
+ $container-bg               : #ccc;
+ $btn-boxshadow         : #ccc;
+
+// ==============   End of variable    =================== //

@@ -1,0 +1,44 @@
+ // ====================================================================
+ // Heading          : Main File for Stylesheet
+ // Descriptions:  Be aware of the specificities and don't use !important as best as you can. We
+ //  should only write all of the stylesheets for our website in a single file . This will help you
+ //  a lot of http payload . Don't import another css file by using @import content . 
+ // ====================================================================
+
+// utilities
+ @include 'utilities/config';
+ @include 'utilities/extensions';
+ @include 'utilities/functions';
+ @include 'utilities/mixins';
+ @include 'utilities/utilities';
+
+
+// base
+@include 'base/base';
+
+//  layout 
+@include 'layouts/content';
+@include 'layouts/header';
+@include 'layouts/footer';
+
+// modules
+@include 'modules/budges';
+@include 'modules/button';
+@include 'modules/carousel';
+@include 'modules/container';
+@include 'modules/form';
+@include 'modules/slider';
+@include 'modules/spritesheet';
+@include 'modules/utilities';
+
+//  theme
+@include 'theme/theme';
+
+// media queries
+@include 'mq';
+
+//  nojs
+@include 'nojs/nojs';
+
+
+
