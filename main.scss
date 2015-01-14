@@ -14,25 +14,19 @@
 
 
 // base
-@include 'base/base';
+@include 'base/import;
 
 //  layout 
-@include 'layouts/content';
-@include 'layouts/header';
-@include 'layouts/footer';
+@include 'layouts/import';
 
 // modules
-@include 'modules/budges';
-@include 'modules/button';
-@include 'modules/carousel';
-@include 'modules/container';
-@include 'modules/form';
-@include 'modules/slider';
-@include 'modules/spritesheet';
-@include 'modules/utilities';
+@include 'modules/import';
+
+// states 
+@include 'states/import';
 
 //  theme
-@include 'theme/theme';
+@include 'theme/import';
 
 // media queries
 @include 'mq';

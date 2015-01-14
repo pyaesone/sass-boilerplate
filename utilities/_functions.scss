@@ -9,3 +9,8 @@
     $remSize: $size / 16px;
     @return $remSize * 1rem;
 }
+
+// Calculate em values
+@function em($target, $context: $base-font-size ) {
+    @return ($target / $context) * 1em;
+}
