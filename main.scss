@@ -6,33 +6,33 @@
  // ====================================================================
 
 // utilities
- @include 'utilities/config';
- @include 'utilities/extensions';
- @include 'utilities/functions';
- @include 'utilities/mixins';
- @include 'utilities/utilities';
+ @import 'utilities/config';
+ @import 'utilities/extensions';
+ @import 'utilities/functions';
+ @import 'utilities/mixins';
+ @import 'utilities/utilities';
 
 
 // base
-@include 'base/import;
+@import 'base/import';
 
 //  layout 
-@include 'layouts/import';
+@import 'layouts/import';
 
 // modules
-@include 'modules/import';
+@import 'modules/import';
 
 // states 
-@include 'states/import';
+@import 'states/import';
 
 //  theme
-@include 'theme/import';
+@import 'theme/import';
 
 // media queries
-@include 'mq';
+@import 'mq';
 
 //  nojs
-@include 'nojs/nojs';
+@import 'nojs/nojs';
 
 
 
