@@ -1,12 +1,12 @@
 // ====================================================================
- // Heading          : Mixins
- // Descriptions:  Sass Mixins are very useful for every front end developer . It makes your 
- // code DRY. They will give you nice supportation when you are creating your own themes.
- //  They can be included from your base , layouts and other files . They should be imported 
- // before your predefined style sheet which will use your sass mixins.
- // ====================================================================
+// Heading          : Mixins
+// Descriptions     : Sass Mixins are very useful for every front end developer . It makes your 
+// code DRY. They will give you nice supportation when you are creating your own themes.
+//  They can be included from your base , layouts and other files . They should be imported 
+// before your predefined style sheet which will use your sass mixins.
+// ====================================================================
 
- // BEM selectors
+// BEM selectors
 
 @mixin e($element) {
 
@@ -15,6 +15,7 @@
         @content;
     }
 }
+
 @mixin m($modifier) {
 
     &--#{$modifier} {
