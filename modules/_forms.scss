@@ -1,13 +1,13 @@
- // ====================================================================
- // Heading         : Form Element
- // Descriptions    : Style for form element ( input , textarea , radio and other form stuffs )
- // ====================================================================
+// ====================================================================
+// Heading         : Form Element
+// Descriptions    : Style for form element ( input , textarea , radio and other form stuffs )
+// ====================================================================
 
- .form {
-    @include e(input) {
+.form {
+@include e(input) {
 
-    }
-    @include e(textarea) {
+}
+@include e(textarea) {
 
-    }    
- }
+}    
+}

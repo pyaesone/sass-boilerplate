@@ -1,11 +1,11 @@
- // ====================================================================
- // Heading          : Container
- // Descriptions     : Styles for container and other sort of containment
- // element.
- // ====================================================================
- 
- .container {
-    @include e(clear)  {
-        clear: both;
-    }
- }
+// ====================================================================
+// Heading          : Container
+// Descriptions     : Styles for container and other sort of containment
+// element.
+// ====================================================================
+
+.container {
+@include e(clear)  {
+    clear: both;
+}
+}

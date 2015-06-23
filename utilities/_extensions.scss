@@ -1,9 +1,9 @@
 // ====================================================================
- // Heading          : Extensions
- // Descriptions     : Don't repeat Yourself(DRY) and should organize your reusable  code 
- // style snippet in this file and extend from the other classes and ids.
- // This file is intended to use for multi object.
- // ====================================================================
+// Heading          : Extensions
+// Descriptions     : Don't repeat Yourself(DRY) and should organize your reusable  code 
+// style snippet in this file and extend from the other classes and ids.
+// This file is intended to use for multi object.
+// ====================================================================
 
  %font-base {    
 
@@ -29,17 +29,18 @@
 
 // clearfix by nicolas gallagher
 %clearfix {
-  *zoom: 1;
+    *zoom: 1;
 
-  &:before, 
-  &:after {
-    content: " ";
-    display: table;
-}
+    &:before, 
+    &:after {
+        content: " ";
+        display: table;
+    }
 
-&:after {
-    clear: both;
-}
+
+    &:after {
+        clear: both;
+    }
 }
 
 %visuallyhidden {
