@@ -15,7 +15,7 @@
 * Helpful sass mixins and functions
 
 ## Documentation
-# Sass Boilerplate is a work flow for building fast and robust css architecture for your website and themes. It is constructed with the rules of scalable and modular architecture for css(SMACSS) and Base element modifier(BEM) selectors. You can freely architect your sass code base in the way that you want.
+Sass Boilerplate is a workflow for building fast and robust css architecture for your website and themes. It is constructed with the rules of scalable and modular architecture for css(SMACSS) and Base element modifier(BEM) selectors. You can freely architect your sass code base in the way that you want.
 * Take a look at the [documentation table of contents]
 
 ## Contributing
