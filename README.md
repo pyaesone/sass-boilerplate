@@ -1,5 +1,5 @@
-# [Sass Boilerplate](https://bitbucket.org/big_head/sass-boilerplate)
-# Sass Boilerplate is a work flow for building fast and robust css architecture for your website and themes
+## [Sass Boilerplate](https://bitbucket.org/big_head/sass-boilerplate)
+## Sass Boilerplate is a work flow for building fast and robust css architecture for your website and themes
 * Author: [Pyae Sone](https://github.com/pyaesone)
 * Homepage: [https://bitbucket.org/big_head/sass-boilerplate](https://bitbucket.org/big_head/sass-boilerplate)
 * Twitter: [@PyaeSoneAung8](http://twitter.com/PyaeSoneAung8)

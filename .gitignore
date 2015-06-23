@@ -1,0 +1,20 @@
+.DS_Store
+
+# Logs
+logs
+*.log
+
+.grunt
+
+# sass-cache
+.sass-cache
+
+# Compile binary addons (http://nodejs.org/api/addons.html)
+build/release
+
+
+#image
+images
+
+
+
